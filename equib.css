@@ -1,0 +1,443 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Fira Sans Condensed', sans-serif;
+     font-size: 20px;
+     font-weight: bolder;
+ }
+
+ body {
+     background: linear-gradient(rgba(28, 28, 28, 0.7), rgba(16, 15, 15, 0.7)), url(iq.jpg);
+
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+ }
+
+ input::placeholder {
+     color: #dcd1d1;
+     font-weight: 100;
+ }
+
+
+
+ h2 {
+     font-size: 80px;
+     text-align: center;
+     margin-top: 50px;
+     font-weight: bolder;
+ }
+
+ input {
+     background-color: rgb(92, 97, 97);
+     height: 35px;
+     width: auto;
+     border: none;
+     outline: none;
+     padding-left: 18px;
+     color: azure;
+     margin-bottom: 15px;
+     border-radius: 15px;
+ }
+
+ select {
+     margin-bottom: 30px;
+     color: white;
+     background-color: rgb(81, 80, 80);
+     border-radius: 15px;
+     padding: 8px;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+
+
+ }
+
+
+ .opacity {
+     opacity: 0.9;
+ }
+
+
+
+ table {
+     width: 100%;
+
+ }
+
+ #table-data td {
+     color: #ebe7e8;
+     border: 1px solid rgba(0, 0, 0, 0.536);
+ }
+
+ th,
+ td {
+     color: rgb(255, 255, 255);
+     border: 3px solid rgba(22, 23, 23, 0.312);
+     border-radius: 0px;
+     width: 60%;
+     font-size: 20px;
+     font-family: 'Kanit', sans-serif;
+     padding-left: 10px;
+     margin-bottom: 10px;
+ }
+
+ #box {
+     width: 60%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -40%);
+ }
+
+ .btn-sub {
+     background-color: rgb(14, 126, 50);
+     width: fit-content;
+     padding: 5px 15px;
+     border: none;
+     margin-top: 20px;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 11px;
+     margin-bottom: 40px;
+     text-transform: capitalize;
+ }
+
+ #btn-winner {
+     width: 60%;
+     margin-top: 44px;
+     height: 40px;
+     color: #fff;
+     border: none;
+     background-color: rgb(67, 169, 232);
+     border-radius: 10px;
+     margin-left: 18%;
+     margin-bottom: 15px;
+     outline: none;
+
+ }
+
+ .hidden {
+     display: none;
+ }
+
+ #modal-winner {
+     position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: 350px;
+     width: 40ch;
+     padding-top: 5px;
+     padding-bottom: 0%;
+     color: white;
+     border-radius: 8px;
+     background-color: rgba(19, 219, 46, 0.881);
+     /* background-color: rgba(75, 221, 42, 0.881); */
+     /* border-radius: 45px 2px 48px 0px; */
+     border: 0;
+ }
+
+ .modall::backdrop {
+
+     background: #0000007a;
+ }
+
+ #modal-x-button {
+     background-color: rgba(0, 0, 0, 0);
+     padding: 0px;
+     width: 55px;
+     height: 55px;
+
+     border-radius: 50%;
+     /* border: 2px solid white; */
+     position: absolute;
+     right: 10px;
+     top: 10px;
+     cursor: pointer;
+
+ }
+
+
+
+ #btn-m {
+     padding: 5px 30px;
+     border: 0;
+     outline: none;
+     background-color: rgb(0, 0, 0);
+     color: #fff;
+     border-radius: 10px;
+     text-transform: capitalize;
+ }
+
+ .my-nav {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: rgba(139, 111, 135, 0.471);
+     height: 60px;
+     padding: 5px 100px;
+     opacity: 0.9;
+     position: relative;
+     z-index: 2;
+ }
+
+ .nav-list {
+     display: flex;
+     margin-left: auto;
+     margin-top: 15px;
+
+ }
+
+ li {
+     padding-top: 10px;
+     margin: 14px;
+     list-style: none;
+     font-weight: 300;
+     text-transform: uppercase;
+ }
+
+ li button {
+     background-color: #0e9fc7;
+
+     padding: 4px 2px;
+     border: none;
+     border-radius: 4px;
+
+ }
+
+ #navbar-show-btn {
+     background-color: #c32753bd;
+
+     padding: 4px 5px;
+     border: none;
+     border-radius: 4px;
+ }
+ #navbar-show-btn:hover{box-shadow: 0 0.5em 0.5em -0.4em rgb(21, 84, 167);
+    transform: translateY(-0.15em);}
+
+
+
+ li button:hover {
+     opacity: 0.8;
+ }
+
+ li button a {
+     font-size: 19px;
+     font-weight: 500;
+     text-decoration: none;
+     color: #fff;
+     padding: 2px;
+ }
+
+ li button a:hover {
+     color: #fff;
+ }
+
+ .ico {
+     font-size: 30px;
+     color: #c5c514;
+     font-weight: 900;
+     font-family: 'Special Elite', cursive;
+     margin-left: 15px;
+     margin-top: 15px;
+ }
+
+ .ico span {
+
+     font-size: 55px;
+     color: rgba(192, 218, 255, 0.8);
+     font-weight: 900;
+     font-family: 'Kablammo', cursive;
+
+ }
+
+ .bi-coin {
+     margin-top: 15px;
+     font-size: 40px;
+     color: rgb(33, 33, 32);
+ }
+
+ #register-modal {
+     position: relative;
+     width: 40ch;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 25px 0px;
+     border: 0;
+ }
+
+ #register-modal::backdrop {
+     background: #000000c2;
+ }
+
+ .modal2-contents {
+     display: flex;
+     flex-direction: column;
+     width: 300px;
+ }
+
+ .modal2-contents input {
+     background-color: #0e9fc7;
+ }
+
+ .btn-register {
+     background: #0e9fc7;
+     color: #fff;
+     border: 0;
+     float: left;
+     width: fit-content;
+     padding: 2px 16px;
+     border-radius: 50px;
+     margin-left: 100px;
+     transition: 0.5s;
+ }
+ .btn-register:hover{
+   
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(220, 100, 30);
+        transform: translateY(-0.20em);
+ }
+ #navbar-register-btn:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(21, 84, 167);
+        transform: translateY(-0.15em);
+ }
+
+ #modal2-x-button {
+     position: absolute;
+     right: 10px;
+     top: 10px;
+     border: 0;
+     width: 35px;
+     height: 35px;
+     background-color: rgb(255, 255, 255);
+
+
+ }
+
+ #modal2-x-button .fa-sharp {
+     position: absolute;
+     right: 0px;
+     top: 0px;
+     width: 35px;
+     height: 35px;
+ }
+
+ #registration-error-msg {
+     margin-top: -10px;
+     font-size: 15px;
+     color: red;
+ }
+
+ #modal-display-users {
+     width: 500px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+
+     transform: translate(-50%, -50%);
+     overflow: hidden;
+     border: 0px;
+     padding-left: 8px;
+     background-color: rgba(65, 66, 135, 0.345);
+     -webkit-backdrop-filter: blur(15px);
+     backdrop-filter: blur(15px);
+     border: 0px solid rgba(172, 121, 141, 0.3);
+     transition: 0.6s ease-in-out;
+
+
+ }
+
+ #modal-display-users::backdrop {
+     background: #000000a7;
+ }
+
+ .box_shadow {
+     box-shadow: 15px 15px 25px 5px rgba(102, 100, 101, 0.332);
+
+ }
+
+ #display-modal-close {
+     padding: 3px 5px;
+     background-color: rgb(203, 68, 68);
+     color: #fff;
+     margin-top: 15px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 15px;
+     margin-top: 20px;
+     outline: none;
+     border: none;
+     border-radius: 8px;
+
+ }
+
+ #table-display-users {
+     border-collapse: collapse;
+
+ }
+
+ #table-display-users th,
+ td {
+     border: 0;
+     border-right: 1px solid #cecedb;
+     padding: 5px;
+     color: #fff;
+ }
+
+ #payment-error-msg {
+     margin-top: -15px;
+     font-size: 15px;
+     color: red;
+     font-family: 'Open Sans', sans-serif;
+     text-transform: capitalize;
+
+ }
+
+ #payment-success-msg {
+     margin-top: -25px;
+     font-size: 18px;
+     color: rgb(77, 237, 77);
+     font-weight: 600;
+     background: #39393bd3;
+     font-family: 'Open Sans', sans-serif;
+
+ }
+
+ #background_img {
+     background-color: rgba(255, 220, 220, 0.4);
+     -webkit-backdrop-filter: blur(15px);
+     backdrop-filter: blur(15px);
+     border: 3px solid rgba(255, 220, 220, 0.4);
+     transition: 0.6s ease-in-out;
+ }
+
+ #background_img2 {
+     background-color: rgba(198, 100, 137, 0.4);
+     -webkit-backdrop-filter: blur(15px);
+     backdrop-filter: blur(15px);
+     border: 3px solid rgba(172, 121, 141, 0.4);
+     transition: 0.6s ease-in-out;
+
+
+ }
+
+ #background_img2:hover {
+     box-shadow: 15px 15px 25px 5px rgba(245, 159, 206, 0.332);
+     transition: 0.9s;
+ }
+
+ #background_img:hover {
+     box-shadow: 0px 15px 25px 15px rgba(25, 140, 207, 0.332);
+    transition: 0.9s;
+ }
