@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="equib.css">
+    <script src="https://kit.fontawesome.com/f66c9b28a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="my-nav">
+        <h3 class="ico"> <span>እ</span>ቁብ </h3>
+        <ul class="nav-list ">
+            <li><button id="navbar-register-btn"><a href="#">ይመዝገቡ</a></button></li>
+            <li><button id="navbar-show-btn"><a href="#">የተመዘገቡትን አሳይ </a></button></li>
+
+
+        </ul>
+    </div>
+
+
+    <div class="container text-dark ">
+        <div id="box">
+            <div class="row mt-4 box_shadow">
+                <div id="background_img" class="col-md-6  pt-4  opacity">
+                    <form id="form">
+                        <center>
+                            <h1 style="color: #fffcfc; font-size: 32px; font-weight: 700;">Pay By Your ID</h1>
+                        </center>
+                        <label style="color: #fffcfc;">ID:</label>
+                        <input placeholder="Enter Your ID" type="text" id="pay-Id">
+                        <label style="color: #fffcfc;">Amount:</label>
+                        <select name="payment" id="amount">
+                            <option value="10000">10,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="50000">50,000</option>
+                        </select>
+                        <center>
+                            <p class="" id="payment-error-msg"></p>
+                            <p class="" id="payment-success-msg"></p>
+                        </center>
+                        <input type="submit" value="    PAY    " id="submit " class="btn-sub">
+                    </form>
+
+                </div>
+                <div id="background_img2" class="col-md-6  pt-4 pb-4  position-relative text-white" id="display">
+
+                    <table id="table-data" class="text-white">
+
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        </tr>
+                    </table>
+                    <button id="btn-winner" class="">winner</button>
+                </div>
+            </div>
+
+
+            <dialog id="modal-display-users">
+                <div class="row ">
+                    <center>
+                        <h1 style="color: #fff; font-size: 32px;">የተመዘገቡ እቁብተኞች</h1>
+                    </center>
+                    <div class="col-12">
+                        <table id="table-display-users">
+                            <tr>
+                                <th style="color: chartreuse;">Name</th>
+                                <th style="color: chartreuse;">ID</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <center>
+                    <button id="display-modal-close">Close</button>
+                </center>
+            </dialog>
+        </div>
+    </div>
+
+
+
+    <dialog id="modal-winner" class="modall">
+        <center>
+
+            <img class="bi" id="modal-x-button" src="icons8-close-64.png"></img>
+            <h1 id="modal-h1" style="font-size: 40px; font-weight: bold; text-transform: uppercase; padding-top: 50px;">
+                congratulation (እንኽኳን ደስ አሎት) </h1>
+            <h2 id="winner-name" style="text-transform: capitalize; font-size: 40px;"></h2>
+            <h3 id="win-amount" style="font-size: 28px;"></h3>
+
+            <button id="btn-m" class="">close</button>
+
+        </center>
+    </dialog>
+
+
+
+
+    <dialog id="register-modal">
+        <center>
+            <div class="modal2-contents">
+
+                <button id="modal2-x-button"><img class="fa-sharp" src="icons8-close-50.png"></img></button>
+                <h1>Register Now</h1>
+
+                <label> Full name:</label>
+                <input placeholder="Enter Your Name" type="text" id="register_name">
+                <label> Enter ID:</label>
+                <input placeholder="Enter New ID" type="number" id="register_id">
+                <p id="registration-error-msg" class="hidden">Id already exist</p>
+                <button class="btn-register" id="register-btn" type="submit">Register</button>
+
+            </div>
+
+        </center>
+
+    </dialog>
+    <script src="equib1.js"></script>
+</body>
+
+</html>
